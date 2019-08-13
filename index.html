@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Tabela SAC</title>
+</head>
+<body>
+    <h1>Sistema de Amortização Constante</h1>		
+		<form>
+			<fieldset>
+				<legend>Dados fornecidos</legend>
+				<label for="valorFinanciamento"><b>Valor do Financiamento:</b></label>
+				<input type="text" id="valorFinanciamento" />
+				<br />
+				<label for="juros"><b>Tx de Juros Anual(%):</b></label>
+				<input type="text" id="juros" />
+				<br />
+				<label for="periodo"><b>Periodo:</b></label>
+				<select id="periodo">
+					<option value="12">12 Meses</option>
+					<option value="24">24 Meses</option>
+					<option value="36">36 Meses</option>
+					<option value="48">48 Meses</option>
+					<option value="60">60 Meses</option>
+            <option value="72">72 Meses</option>
+				</select>
+				<br />
+				<input type="button" value="Calcular" onclick="pegarValores()" />								
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+			<legend>Dados gerados</legend>
+				<div id="Resultado"></div>
+			</fieldset>						
+		</form>		
+	</body>
+</html>
